@@ -3,6 +3,7 @@
 <script>
     var pubkey;
     var prikey;
+
     function getCookie(cname) {
         var name = cname + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
@@ -67,8 +68,8 @@
         $.ajax({
             type: 'GET',
             url: `http://localhost:3000/keys/?username=${username}`,
-            async : false,
-            success: function(data) {
+            async: false,
+            success: function (data) {
                 var obj = JSON.parse(data);
                 pubkey = obj.publickey;
                 prikey = obj.privatekey;
@@ -177,7 +178,7 @@
                         <form id="form-chat" action="#0">
                             <div class="input-group">
                                 <input type="text" id="textbox" class="form-control" placeholder="input here plz">
-                                <input type="text" id="sendto" class="form-control" placeholder="如果指定发给某人请输入他的用户名">
+
                                 <span class="input-group-btn"><button class="btn btn-default" onclick="checkFunc()"
                                         type="submit">Go</button></span>
                             </div>
