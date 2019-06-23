@@ -1,0 +1,71 @@
+{% extends "base.html" %} {% block main %}
+<script>
+    $(function() {
+        var vm = new Vue({
+        el: "#registerPart",
+        data: {
+            username: '',
+            passwd: '',
+            ps: '',
+            wrong :false
+    },
+    watch: {
+        passwd: async function (newpwd, oldpwd) {
+            const pwd = /^[a-zA-Z0-9]{6,14}$/;
+            right = await pwd.test(newpwd);
+            if (right === true) {
+                this.ps = '密码符合规范';
+                this.wrong = true;
+            } else {
+                const badLength = /^[a-zA-Z0-9]*$/;
+                var flag = await badLength.test(newpwd);
+                if (flag === true) {
+                    this.ps = '密码长度应该在6-14位';
+                    this.wrong = true;
+                } 
+                if (flag === false){
+                    this.ps = '密码仅由大小写字母和数字组成';
+                    this.wrong = true;
+                }
+            }
+            console.log(this.ps);
+            console.log(this.wrong)
+        }
+    },
+        })
+    }
+
+    )
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+    <div class="row" id="registerPart">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-user"></span> register</h3>
+                </div>
+                <div class="panel-body">
+                    <form action="/register" method="post">
+                        <div class="form-group">
+                            <label>UserName</label>
+                            <input type="text" name="username" class="form-control" placeholder="username"
+                                v-model="username">
+                            <label>password</label>
+                            <input type="password" v-model="passwd" name="pwd" class="form-control">
+                            <p class="help-block">密码长度应该在6-14位，只能由字母和数字组成</p>
+                        </div>
+                        <button type="submit" class="btn btn-primary">submit</button>
+                    </form>
+                    <div class="alert alert-danger" v-model="ps" v-if="wrong" style="margin-top: 10px">{% raw %}{{ ps }}{% endraw %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

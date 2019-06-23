@@ -1,0 +1,797 @@
+卷 新加卷 的文件夹 PATH 列表
+卷序列号为 36C1-4D58
+D:.
+├─.vscode
+│  └─ipch
+│      └─55629c8d856176be
+├─controllers
+├─keys
+├─LSB
+├─node_modules
+│  ├─.bin
+│  ├─@types
+│  │  ├─events
+│  │  ├─formidable
+│  │  └─node
+│  │      └─ts3.2
+│  ├─abab
+│  │  └─lib
+│  ├─accepts
+│  ├─acorn
+│  │  ├─bin
+│  │  └─dist
+│  ├─acorn-globals
+│  ├─acorn-walk
+│  │  └─dist
+│  ├─ajv
+│  │  ├─dist
+│  │  ├─lib
+│  │  │  ├─compile
+│  │  │  ├─dot
+│  │  │  ├─dotjs
+│  │  │  └─refs
+│  │  └─scripts
+│  ├─ansi-regex
+│  ├─any-promise
+│  │  └─register
+│  ├─anymatch
+│  ├─arr-diff
+│  ├─arr-flatten
+│  ├─arr-union
+│  ├─array-equal
+│  ├─array-unique
+│  ├─asap
+│  ├─asn1
+│  │  └─lib
+│  │      └─ber
+│  ├─assert-plus
+│  ├─assign-symbols
+│  ├─async-each
+│  ├─async-limiter
+│  │  └─coverage
+│  │      └─lcov-report
+│  │          └─async-throttle
+│  ├─asynckit
+│  │  └─lib
+│  ├─atob
+│  │  └─bin
+│  ├─aws-sign2
+│  ├─aws4
+│  ├─base
+│  │  └─node_modules
+│  │      ├─define-property
+│  │      ├─is-accessor-descriptor
+│  │      ├─is-data-descriptor
+│  │      ├─is-descriptor
+│  │      ├─isobject
+│  │      └─kind-of
+│  ├─bcrypt-pbkdf
+│  ├─bignumber.js
+│  │  └─doc
+│  ├─binary-extensions
+│  ├─bluebird
+│  │  └─js
+│  │      ├─browser
+│  │      └─release
+│  ├─braces
+│  ├─browser-process-hrtime
+│  ├─bytes
+│  ├─cache-base
+│  │  └─node_modules
+│  │      └─isobject
+│  ├─cache-content-type
+│  ├─camelcase
+│  ├─caseless
+│  ├─child_process
+│  ├─chokidar
+│  │  └─lib
+│  ├─class-utils
+│  │  └─node_modules
+│  │      ├─define-property
+│  │      └─isobject
+│  ├─cliui
+│  ├─cls-bluebird
+│  │  └─lib
+│  ├─co
+│  ├─co-body
+│  │  └─lib
+│  ├─code-point-at
+│  ├─collection-visit
+│  ├─combined-stream
+│  │  └─lib
+│  ├─component-emitter
+│  ├─content-disposition
+│  ├─content-type
+│  ├─cookies
+│  ├─copy-descriptor
+│  ├─core-util-is
+│  │  └─lib
+│  ├─cssom
+│  │  └─lib
+│  ├─cssstyle
+│  │  ├─lib
+│  │  │  ├─properties
+│  │  │  └─utils
+│  │  ├─scripts
+│  │  └─tests
+│  ├─dashdash
+│  │  ├─etc
+│  │  └─lib
+│  ├─data-urls
+│  │  └─lib
+│  ├─debug
+│  │  ├─dist
+│  │  └─src
+│  ├─decamelize
+│  ├─decode-uri-component
+│  ├─deep-equal
+│  │  ├─example
+│  │  ├─lib
+│  │  └─test
+│  ├─deep-is
+│  │  ├─example
+│  │  └─test
+│  ├─define-property
+│  │  └─node_modules
+│  │      ├─is-accessor-descriptor
+│  │      ├─is-data-descriptor
+│  │      ├─is-descriptor
+│  │      ├─isobject
+│  │      └─kind-of
+│  ├─delayed-stream
+│  │  └─lib
+│  ├─delegates
+│  │  └─test
+│  ├─denque
+│  ├─depd
+│  │  └─lib
+│  │      ├─browser
+│  │      └─compat
+│  ├─destroy
+│  ├─domexception
+│  │  └─lib
+│  ├─dottie
+│  ├─ecc-jsbn
+│  │  └─lib
+│  ├─ee-first
+│  ├─error-inject
+│  ├─escape-html
+│  ├─escodegen
+│  │  ├─bin
+│  │  └─node_modules
+│  │      └─source-map
+│  │          ├─dist
+│  │          └─lib
+│  ├─esprima
+│  │  ├─bin
+│  │  └─dist
+│  ├─estraverse
+│  ├─esutils
+│  │  └─lib
+│  ├─expand-brackets
+│  ├─expand-range
+│  ├─extend
+│  ├─extend-shallow
+│  │  └─node_modules
+│  │      └─is-extendable
+│  ├─extglob
+│  ├─extsprintf
+│  │  └─lib
+│  ├─fast-deep-equal
+│  ├─fast-json-stable-stringify
+│  │  ├─benchmark
+│  │  ├─example
+│  │  └─test
+│  ├─fast-levenshtein
+│  ├─filename-regex
+│  ├─fill-range
+│  ├─for-in
+│  ├─for-own
+│  ├─forever-agent
+│  ├─form-data
+│  │  └─lib
+│  ├─formidable
+│  │  └─lib
+│  ├─fragment-cache
+│  ├─fresh
+│  ├─generate-function
+│  ├─get-value
+│  ├─getpass
+│  │  └─lib
+│  ├─glob-base
+│  ├─glob-parent
+│  ├─graceful-fs
+│  ├─har-schema
+│  │  └─lib
+│  ├─har-validator
+│  │  └─lib
+│  ├─has-value
+│  │  └─node_modules
+│  │      └─isobject
+│  ├─has-values
+│  │  └─node_modules
+│  │      ├─is-number
+│  │      │  └─node_modules
+│  │      │      └─kind-of
+│  │      └─kind-of
+│  ├─html-encoding-sniffer
+│  │  └─lib
+│  ├─http-assert
+│  ├─http-errors
+│  ├─http-signature
+│  │  └─lib
+│  ├─iconv-lite
+│  │  ├─encodings
+│  │  │  └─tables
+│  │  └─lib
+│  ├─inflation
+│  ├─inflection
+│  │  └─lib
+│  ├─inherits
+│  ├─invert-kv
+│  ├─ip-regex
+│  ├─is-accessor-descriptor
+│  ├─is-binary-path
+│  ├─is-bluebird
+│  │  └─lib
+│  ├─is-buffer
+│  │  └─test
+│  ├─is-data-descriptor
+│  ├─is-descriptor
+│  │  └─node_modules
+│  │      └─kind-of
+│  ├─is-dotfile
+│  ├─is-equal-shallow
+│  ├─is-extendable
+│  ├─is-extglob
+│  ├─is-fullwidth-code-point
+│  ├─is-generator-function
+│  │  └─test
+│  ├─is-glob
+│  ├─is-number
+│  ├─is-plain-object
+│  │  └─node_modules
+│  │      └─isobject
+│  ├─is-posix-bracket
+│  ├─is-primitive
+│  ├─is-property
+│  ├─is-typedarray
+│  ├─is-windows
+│  ├─isarray
+│  │  └─build
+│  ├─isobject
+│  │  └─node_modules
+│  │      └─isarray
+│  ├─isstream
+│  ├─jsbn
+│  ├─jsdom
+│  │  ├─lib
+│  │  │  └─jsdom
+│  │  │      ├─browser
+│  │  │      │  ├─parser
+│  │  │      │  └─resources
+│  │  │      ├─level2
+│  │  │      ├─level3
+│  │  │      └─living
+│  │  │          ├─aborting
+│  │  │          ├─attributes
+│  │  │          ├─constraint-validation
+│  │  │          ├─domparsing
+│  │  │          ├─events
+│  │  │          ├─fetch
+│  │  │          ├─file-api
+│  │  │          ├─generated
+│  │  │          ├─helpers
+│  │  │          │  └─svg
+│  │  │          ├─hr-time
+│  │  │          ├─mutation-observer
+│  │  │          ├─navigator
+│  │  │          ├─nodes
+│  │  │          ├─svg
+│  │  │          ├─traversal
+│  │  │          ├─websockets
+│  │  │          ├─webstorage
+│  │  │          ├─window
+│  │  │          └─xhr
+│  │  └─node_modules
+│  │      └─ws
+│  │          └─lib
+│  ├─jsencrypt
+│  │  ├─.idea
+│  │  │  └─scopes
+│  │  ├─bin
+│  │  └─_site
+│  │      ├─assets
+│  │      │  ├─css
+│  │      │  └─javascript
+│  │      │      └─anchor-js
+│  │      │          └─docs
+│  │      │              ├─fonts
+│  │      │              ├─grunticon
+│  │      │              │  └─png
+│  │      │              └─img
+│  │      └─bin
+│  ├─json-schema
+│  │  ├─draft-00
+│  │  ├─draft-01
+│  │  ├─draft-02
+│  │  ├─draft-03
+│  │  │  └─examples
+│  │  ├─draft-04
+│  │  ├─lib
+│  │  └─test
+│  ├─json-schema-traverse
+│  │  └─spec
+│  │      └─fixtures
+│  ├─json-stringify-safe
+│  │  └─test
+│  ├─jsprim
+│  │  └─lib
+│  ├─keygrip
+│  ├─kind-of
+│  ├─koa
+│  │  ├─lib
+│  │  └─node_modules
+│  │      ├─debug
+│  │      │  └─src
+│  │      ├─koa-compose
+│  │      └─ms
+│  ├─koa-body
+│  │  └─node_modules
+│  │      ├─bytes
+│  │      ├─co-body
+│  │      │  └─lib
+│  │      ├─iconv-lite
+│  │      │  ├─encodings
+│  │      │  │  └─tables
+│  │      │  └─lib
+│  │      ├─qs
+│  │      │  ├─dist
+│  │      │  ├─lib
+│  │      │  └─test
+│  │      └─raw-body
+│  ├─koa-bodyparser
+│  ├─koa-compose
+│  ├─koa-convert
+│  ├─koa-is-json
+│  ├─koa-router
+│  │  ├─lib
+│  │  └─node_modules
+│  │      ├─debug
+│  │      │  └─src
+│  │      └─ms
+│  ├─lcid
+│  ├─levn
+│  │  └─lib
+│  ├─lodash
+│  │  └─fp
+│  ├─lodash.sortby
+│  ├─long
+│  │  ├─dist
+│  │  └─src
+│  ├─lru-cache
+│  ├─map-cache
+│  ├─map-visit
+│  ├─math-random
+│  ├─media-typer
+│  ├─methods
+│  ├─micromatch
+│  │  └─lib
+│  ├─mime
+│  │  └─build
+│  ├─mime-db
+│  ├─mime-types
+│  ├─mixin-deep
+│  │  └─node_modules
+│  │      └─is-extendable
+│  ├─moment
+│  │  ├─locale
+│  │  ├─min
+│  │  └─src
+│  │      ├─lib
+│  │      │  ├─create
+│  │      │  ├─duration
+│  │      │  ├─format
+│  │      │  ├─locale
+│  │      │  ├─moment
+│  │      │  ├─parse
+│  │      │  ├─units
+│  │      │  └─utils
+│  │      └─locale
+│  ├─moment-timezone
+│  │  ├─builds
+│  │  └─data
+│  │      ├─meta
+│  │      └─packed
+│  ├─ms
+│  ├─mysql
+│  │  └─lib
+│  │      └─protocol
+│  │          ├─constants
+│  │          ├─packets
+│  │          └─sequences
+│  ├─mysql2
+│  │  ├─lib
+│  │  │  ├─commands
+│  │  │  ├─constants
+│  │  │  ├─packets
+│  │  │  └─parsers
+│  │  └─node_modules
+│  │      └─iconv-lite
+│  │          ├─encodings
+│  │          │  └─tables
+│  │          └─lib
+│  ├─mz
+│  ├─named-placeholders
+│  ├─nanomatch
+│  │  ├─lib
+│  │  └─node_modules
+│  │      ├─arr-diff
+│  │      ├─array-unique
+│  │      └─kind-of
+│  ├─negotiator
+│  │  └─lib
+│  ├─node-rsa
+│  │  └─src
+│  │      ├─encryptEngines
+│  │      ├─formats
+│  │      ├─libs
+│  │      └─schemes
+│  ├─normalize-path
+│  ├─number-is-nan
+│  ├─nunjucks
+│  │  ├─bin
+│  │  ├─browser
+│  │  └─src
+│  ├─nwsapi
+│  │  ├─dist
+│  │  └─src
+│  │      └─modules
+│  ├─oauth-sign
+│  ├─object-assign
+│  ├─object-copy
+│  │  └─node_modules
+│  │      └─define-property
+│  ├─object-visit
+│  │  └─node_modules
+│  │      └─isobject
+│  ├─object.omit
+│  ├─object.pick
+│  │  └─node_modules
+│  │      └─isobject
+│  ├─on-finished
+│  ├─only
+│  ├─optionator
+│  │  └─lib
+│  ├─options
+│  │  └─lib
+│  ├─os-locale
+│  ├─parse-glob
+│  ├─parse5
+│  │  └─lib
+│  │      ├─common
+│  │      ├─extensions
+│  │      │  ├─error-reporting
+│  │      │  ├─location-info
+│  │      │  └─position-tracking
+│  │      ├─parser
+│  │      ├─serializer
+│  │      ├─tokenizer
+│  │      ├─tree-adapters
+│  │      └─utils
+│  ├─parseurl
+│  ├─pascalcase
+│  ├─path-is-absolute
+│  ├─path-to-regexp
+│  ├─performance-now
+│  │  ├─lib
+│  │  ├─src
+│  │  └─test
+│  │      └─scripts
+│  ├─pn
+│  │  ├─scripts
+│  │  └─test
+│  ├─posix-character-classes
+│  ├─prelude-ls
+│  │  └─lib
+│  ├─preserve
+│  ├─process-nextick-args
+│  ├─pseudomap
+│  │  └─test
+│  ├─psl
+│  │  ├─data
+│  │  └─dist
+│  ├─punycode
+│  ├─qs
+│  │  ├─lib
+│  │  └─test
+│  ├─randomatic
+│  │  └─node_modules
+│  │      ├─is-number
+│  │      └─kind-of
+│  ├─raw-body
+│  │  └─node_modules
+│  │      └─iconv-lite
+│  │          ├─encodings
+│  │          │  └─tables
+│  │          └─lib
+│  ├─readable-stream
+│  │  ├─doc
+│  │  │  └─wg-meetings
+│  │  ├─lib
+│  │  │  └─internal
+│  │  │      └─streams
+│  │  └─node_modules
+│  │      └─isarray
+│  ├─readdirp
+│  │  └─node_modules
+│  │      ├─arr-diff
+│  │      ├─array-unique
+│  │      ├─braces
+│  │      │  ├─lib
+│  │      │  └─node_modules
+│  │      │      └─extend-shallow
+│  │      ├─debug
+│  │      │  └─src
+│  │      ├─expand-brackets
+│  │      │  ├─lib
+│  │      │  └─node_modules
+│  │      │      ├─define-property
+│  │      │      ├─extend-shallow
+│  │      │      ├─is-accessor-descriptor
+│  │      │      │  └─node_modules
+│  │      │      │      └─kind-of
+│  │      │      ├─is-data-descriptor
+│  │      │      │  └─node_modules
+│  │      │      │      └─kind-of
+│  │      │      ├─is-descriptor
+│  │      │      └─kind-of
+│  │      ├─extglob
+│  │      │  ├─lib
+│  │      │  └─node_modules
+│  │      │      ├─define-property
+│  │      │      └─extend-shallow
+│  │      ├─fill-range
+│  │      │  └─node_modules
+│  │      │      └─extend-shallow
+│  │      ├─is-accessor-descriptor
+│  │      ├─is-data-descriptor
+│  │      ├─is-descriptor
+│  │      ├─is-number
+│  │      │  └─node_modules
+│  │      │      └─kind-of
+│  │      ├─isobject
+│  │      ├─kind-of
+│  │      ├─micromatch
+│  │      │  └─lib
+│  │      └─ms
+│  ├─regex-cache
+│  ├─regex-not
+│  ├─remove-trailing-separator
+│  ├─repeat-element
+│  ├─repeat-string
+│  ├─request
+│  │  ├─lib
+│  │  └─node_modules
+│  │      ├─punycode
+│  │      ├─qs
+│  │      │  ├─dist
+│  │      │  ├─lib
+│  │      │  └─test
+│  │      └─tough-cookie
+│  │          └─lib
+│  ├─request-promise-core
+│  │  ├─configure
+│  │  └─lib
+│  ├─request-promise-native
+│  │  ├─lib
+│  │  └─node_modules
+│  │      └─tough-cookie
+│  │          └─lib
+│  ├─resolve-url
+│  │  └─test
+│  ├─ret
+│  │  └─lib
+│  ├─retry-as-promised
+│  ├─safe-buffer
+│  ├─safe-regex
+│  │  ├─example
+│  │  └─test
+│  ├─safer-buffer
+│  ├─saxes
+│  │  └─lib
+│  ├─semver
+│  │  └─bin
+│  ├─seq-queue
+│  │  ├─lib
+│  │  └─test
+│  ├─sequelize
+│  │  ├─lib
+│  │  │  ├─associations
+│  │  │  ├─dialects
+│  │  │  │  ├─abstract
+│  │  │  │  │  └─query-generator
+│  │  │  │  │      └─helpers
+│  │  │  │  ├─mariadb
+│  │  │  │  ├─mssql
+│  │  │  │  ├─mysql
+│  │  │  │  ├─postgres
+│  │  │  │  └─sqlite
+│  │  │  ├─errors
+│  │  │  │  ├─connection
+│  │  │  │  ├─database
+│  │  │  │  └─validation
+│  │  │  └─utils
+│  │  └─types
+│  │      └─lib
+│  │          ├─associations
+│  │          └─utils
+│  ├─sequelize-pool
+│  │  └─lib
+│  ├─set-value
+│  │  └─node_modules
+│  │      └─extend-shallow
+│  ├─setprototypeof
+│  │  └─test
+│  ├─shimmer
+│  │  └─test
+│  ├─snapdragon
+│  │  ├─lib
+│  │  └─node_modules
+│  │      ├─debug
+│  │      │  └─src
+│  │      ├─define-property
+│  │      ├─extend-shallow
+│  │      └─ms
+│  ├─snapdragon-node
+│  │  └─node_modules
+│  │      ├─define-property
+│  │      ├─is-accessor-descriptor
+│  │      ├─is-data-descriptor
+│  │      ├─is-descriptor
+│  │      ├─isobject
+│  │      └─kind-of
+│  ├─snapdragon-util
+│  ├─source-map
+│  │  ├─dist
+│  │  └─lib
+│  ├─source-map-resolve
+│  │  ├─lib
+│  │  └─test
+│  ├─source-map-url
+│  │  └─test
+│  ├─split-string
+│  ├─sqlstring
+│  │  └─lib
+│  ├─sshpk
+│  │  ├─bin
+│  │  ├─lib
+│  │  │  └─formats
+│  │  └─man
+│  │      └─man1
+│  ├─static-extend
+│  │  └─node_modules
+│  │      └─define-property
+│  ├─statuses
+│  ├─stealthy-require
+│  │  └─lib
+│  ├─string-width
+│  ├─string_decoder
+│  │  └─lib
+│  ├─strip-ansi
+│  ├─symbol-tree
+│  │  └─lib
+│  ├─thenify
+│  ├─thenify-all
+│  ├─to-object-path
+│  ├─to-regex
+│  ├─to-regex-range
+│  │  └─node_modules
+│  │      └─is-number
+│  ├─toidentifier
+│  ├─toposort-class
+│  │  ├─benchmark
+│  │  │  └─0.3.1
+│  │  └─build
+│  ├─tough-cookie
+│  │  └─lib
+│  ├─tr46
+│  │  └─lib
+│  ├─tunnel-agent
+│  ├─tweetnacl
+│  ├─type-check
+│  │  └─lib
+│  ├─type-is
+│  ├─ultron
+│  ├─union-value
+│  │  └─node_modules
+│  │      ├─extend-shallow
+│  │      └─set-value
+│  ├─unpipe
+│  ├─unset-value
+│  │  └─node_modules
+│  │      ├─has-value
+│  │      │  └─node_modules
+│  │      │      └─isobject
+│  │      ├─has-values
+│  │      ├─isarray
+│  │      └─isobject
+│  ├─uri-js
+│  │  ├─dist
+│  │  │  ├─es5
+│  │  │  └─esnext
+│  │  │      └─schemes
+│  │  ├─src
+│  │  │  └─schemes
+│  │  └─tests
+│  ├─urix
+│  │  └─test
+│  ├─use
+│  ├─util-deprecate
+│  ├─uuid
+│  │  ├─bin
+│  │  └─lib
+│  ├─validator
+│  │  └─lib
+│  │      └─util
+│  ├─vary
+│  ├─verror
+│  │  └─lib
+│  ├─w3c-hr-time
+│  │  ├─coverage
+│  │  │  └─hr-time
+│  │  │      └─lib
+│  │  └─lib
+│  ├─w3c-xmlserializer
+│  │  └─lib
+│  ├─webidl-conversions
+│  │  └─lib
+│  ├─whatwg-encoding
+│  │  ├─lib
+│  │  └─node_modules
+│  │      └─iconv-lite
+│  │          ├─encodings
+│  │          │  └─tables
+│  │          └─lib
+│  ├─whatwg-mimetype
+│  │  └─lib
+│  ├─whatwg-url
+│  │  └─lib
+│  ├─window-size
+│  ├─wkx
+│  │  ├─dist
+│  │  └─lib
+│  ├─wordwrap
+│  │  ├─example
+│  │  └─test
+│  ├─wrap-ansi
+│  ├─ws
+│  │  └─lib
+│  ├─xml-name-validator
+│  │  └─lib
+│  ├─xmlchars
+│  │  ├─xml
+│  │  │  └─1.0
+│  │  └─xmlns
+│  │      └─1.0
+│  ├─y18n
+│  ├─yallist
+│  ├─yargs
+│  │  ├─lib
+│  │  └─locales
+│  └─ylru
+├─RSA
+│  └─__pycache__
+├─static
+│  ├─css
+│  ├─fonts
+│  ├─images
+│  ├─js
+│  └─keys
+├─views
+└─密码学
+    ├─.settings
+    ├─bin
+    │  └─密码学
+    └─src
+        └─密码学

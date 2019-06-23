@@ -17,8 +17,6 @@ const controller = require('./controller');
 
 const templating = require('./templating');
 
-const Sequelize = require('sequelize');
-
 const koaBody = require('koa-body');
 
 const WebSocketServer = ws.Server;
@@ -35,6 +33,16 @@ const jsdom = new JSDOM('<!DOCTYPE html><html><body></body></html>');
 
 const { window } = jsdom;
 
+
+const mysql = require('mysql');
+
+var connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'liutiansql234',
+    database: 'test'
+});
+
 global.window = window;
 global.document = window.document;
 global.navigator = {
@@ -42,8 +50,17 @@ global.navigator = {
 };
 
 const { JSEncrypt } = require('jsencrypt');
-
-var jse = new JSEncrypt();
+var alluser = [];
+function findkey(username, callback1) {
+    connection.query(`select * from users where name = '${username}'`, function (err, results) {
+        if (err) {
+            console.log(err);
+        } else {
+            callback1(results[0].publickey, results[0].privatekey);
+        }
+    });
+}
+var jse = new JSEncrypt(); 
 // log request URL:
 app.use(async (ctx, next) => {
     console.log(`Process ${ctx.request.method} ${ctx.request.url}...`);
@@ -63,7 +80,7 @@ app.use(async (ctx, next) => {
     ctx.state.user = parseUser(ctx.cookies.get('name') || '');
     await next();
 });
-
+//读取用户
 
 // static file support:
 let staticFiles = require('./static-files');
@@ -97,8 +114,8 @@ function parseUser(obj) {
     }
     if (s) {
         try {
-            let user = JSON.parse(Buffer.from(s, 'base64').toString());
-            console.log(`User: ${user.name}, ID: ${user.id}`);
+            let user = JSON.parse(s);
+            console.log(`User: ${user.username}, ID: ${user.id},privateKey: ${user.prikey}`);
             return user;
         } catch (e) {
             // ignore
@@ -106,22 +123,7 @@ function parseUser(obj) {
     }
 }
 
-var privatekey = `-----BEGIN RSA PRIVATE KEY-----
-MIICXAIBAAKBgQCsivDJvpQhPmsEV5NuB7gGe6/iEIsLnHtfuDIiXha+MuukbANI
-urAKPDeIPaB4+k73OMvEPTsZudQ9niyjIeEi33IPPWifvbDFkVcH7rLj93VzYAjc
-nUvQZQj9CTp3MIvX2iILP68oR5iYzSsREghIM76mZVkJ6/dA14k2+LwjZQIDAQAB
-AoGAHgbL4n/87VAcdZP7/yDuwIoT0KaKXAnuWnkGmH6BPLZF1cZKSATdD9rs2xPG
-cmc1CMbkhxEU0ORK8DIvmHAT6qFEhobGL9njGedOVO5X5fej6/dXiaISzRN6Vzu9
-+ti63poJKWTdFSS7TjUjm5Ktq4yhD0AjO2Qqey8mrK6nvWECQQDlThWHkgHU2J9R
-8XXK32M9MEG2YwaRdms2+sXz8oiGHgST6aktnO97FnMxY5i7T/tysm0PrmURNGC7
-Eh9X8+e9AkEAwKEvfCKmnfbtj8WLwALnBpcWP/WWnylLzzApEyTQJTG06BX2mN94
-e7EPn6TjBQKMC8H/K/7UAVlqNYS4j4LwyQJADg/azCSNDjN2mbzX/2fxmwgBj6DE
-/1imvIlmaE5gRvFCUJvMrypnmUHIMKgt7pa6Ec+VVpfYRNTUdcRnvaoMdQJARhzl
-GbvLBYgRI9l1amgkCsQHdzQ+pKP1Ue5npO4rTL5w6GDGJxJ/2hWyaBst/m7U5pqv
-9CWGqQ8Ql3Y9bw7r8QJBALMwkiH8BNGGwQxNItAkNHb2GT3Zl6+TSllsiD1Zyn4c
-wz8baoBTJkIEftLZtNlTbvv6i2AH3+0BcrcSZxXkAHM=
------END RSA PRIVATE KEY-----
-`;
+var privatekey = '';
 
 function createWebSocketServer(server, onConnection, onMessage, onClose, onError) {
     let wss = new WebSocketServer({
@@ -130,27 +132,43 @@ function createWebSocketServer(server, onConnection, onMessage, onClose, onError
     wss.broadcast = async function broadcast(data) {
         // console.log(data);
         var dataobj = await JSON.parse(data);
+        var username = dataobj.user.username
         if(dataobj.type == "chat"){
-        jse.setPrivateKey(privatekey);
-        console.log(dataobj.data);
-　　    var rawtext = await jse.decrypt(dataobj.data);
-        await console.log(rawtext);
-        dataobj.data = await rawtext;
-        console.log('[解密] ' + rawtext);
-        if(dataobj.data.endsWith('.png')){
-            // console.log('is a picture');
-            var arr = dataobj.data.split('.');
-            dataobj.data = await 'http://localhost:3000/static/images/' + arr[0] + '_hide' + '.png';
-        }
-    }
-        data = await JSON.stringify(dataobj);
-        // console.log(data);
-        // console.log(dataobj);
+            findkey(username,(pub,pri) => {
+                jse.setPrivateKey(pri);
+                console.log(dataobj.data);
+        　　    var rawtext = jse.decrypt(dataobj.data);
+                 console.log(rawtext);
+                dataobj.data = rawtext;
+                console.log('[解密] ' + rawtext);
+                if(dataobj.data.endsWith('.png')){
+                    // console.log('is a picture');
+                    var arr = dataobj.data.split('.');
+                    dataobj.data = 'http://localhost:3000/static/images/' + arr[0] + '_hide' + '.png';
+                }
+                data =JSON.stringify(dataobj);
         
         wss.clients.forEach(function each(client) {
             client.send(data);
         });
-    };
+            })
+//         jse.setPrivateKey(privatekey);
+//         console.log(dataobj.data);
+// 　　    var rawtext = await jse.decrypt(dataobj.data);
+//         await console.log(rawtext);
+//         dataobj.data = await rawtext;
+//         console.log('[解密] ' + rawtext);
+//         if(dataobj.data.endsWith('.png')){
+//             // console.log('is a picture');
+//             var arr = dataobj.data.split('.');
+//             dataobj.data = await 'http://localhost:3000/static/images/' + arr[0] + '_hide' + '.png';
+//         }
+    }else{
+        data = await JSON.stringify(dataobj);
+        wss.clients.forEach(function each(client) {
+            client.send(data);
+        });
+    };}
     onConnection = onConnection || function () {
         console.log('[WebSocket] connected.');
     };
@@ -200,7 +218,7 @@ function createMessage(type, user, data) {
  
 function onConnect() {
     let user = this.user;
-    let msg = createMessage('join', user, `${user.name} joined.`);
+    let msg = createMessage('join', user, `${user.username} joined.`);
     this.wss.broadcast(msg);
     // build user list:
     let users = this.wss.clients.map(function (client) {
