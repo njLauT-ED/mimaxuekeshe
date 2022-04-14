@@ -20,7 +20,7 @@
         "url": "https://github.com/michaelliao/learn-javascript.git"
     },
     "dependencies": {
-        "async": "^3.0.1",
+        "async": "^3.2.2",
         "child_process": "^1.0.2",
         "iconv-lite": "^0.4.24",
         "jsdom": "^15.1.1",
